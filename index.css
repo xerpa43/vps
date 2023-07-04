@@ -1,11 +1,84 @@
-.totalclasses *{
-    display: flex;
- /* margin: .5rem 0 .5rem 0; */
- flex-direction: row;
- gap:3rem;
-
+body {
+  color: white;
+  background-image: linear-gradient(
+    to left,
+    rgb(15, 15, 87),
+    black,
+    rgba(16, 12, 78, 0.833)
+  );
 }
 
+.Table {
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+  overflow: hidden;
+}
 
+table {
+  border-collapse: collapse;
+}
 
+th,
+td {
+  border: 1px solid purple;
+  padding: 8px;
+}
 
+tbody {
+  gap: 3rem;
+}
+
+.totalclasses {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.theBill {
+  border: 10px solid rgb(168, 6, 122);
+  width: 69vw;
+  /* This is the setting to make things blury when necessary */
+  margin: 10% auto;
+  border-radius: 1.5%;
+  /* position: relative; This is realtive to the classes present below the totalclasses */
+}
+
+.totalclasses * {
+  border-right: 3px solid rgb(2, 240, 216);
+  text-align: right;
+  margin: 3px 2vw;
+}
+
+select {
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+select:hover {
+  background: rgba(25, 36, 36, 0.404);
+  color: rgb(255, 255, 255);
+}
+
+option {
+  color: purple;
+}
+
+button {
+  padding: 0.3rem 0.3rem;
+  transition: 0.3s ease;
+  border: 3px solid rgba(34, 50, 25, 0);
+  border-radius: 3px;
+}
+
+button.Add {
+  background-color: rgb(238, 47, 255);
+  border: 3px solid transparent;
+  margin: 3px 2vw;
+}
+
+button:hover {
+  background: rgb(24, 125, 176);
+  border: 3px solid transparent;
+}
